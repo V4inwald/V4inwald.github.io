@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import "./sass/main.scss";
 import Header from './component/Header/Header'
+import Contact from './component/Contact/Contact'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {
   BrowserRouter as Router,
@@ -20,7 +21,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         {/* <Route path="/projects/:id" element={<Projects />} /> */}
         {/* <Route path="*" element={<Error />} /> */}
       </Routes>
-      {/* <Footer /> */}
+      <Contact />
     </Router>
   </React.StrictMode>,
 )

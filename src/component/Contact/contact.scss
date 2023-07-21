@@ -1,0 +1,22 @@
+@import '../../sass/main.scss';
+
+.footer{
+    background-color: $color-background;
+    color: $color-text;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    @include fonts(1rem,0.75rem,400);
+    h2{
+        margin-bottom: 1rem;
+    }
+    &__email{
+        cursor: pointer;
+    }
+    &__icons{
+        font-size: 2rem;
+        gap: 20px;
+        a{
+            color: $color-text;
+        }
+    }
+}

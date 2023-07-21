@@ -1,0 +1,11 @@
+@import '../../sass/main.scss';
+
+.navbar{
+    background: $color-background-second;
+    .nav-link{
+        font-family: 'Roboto';
+        font-size: 1.25rem;
+        font-weight: 400;
+    }
+}
+

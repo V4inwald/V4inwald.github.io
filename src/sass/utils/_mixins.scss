@@ -4,12 +4,16 @@
     }
 }
 
-@mixin fonts ($size-desktop: 24px, $size-mobile: 12px, $weight: 500){
+@mixin tablet-mobile {
+    @media screen and (max-width: map-get($breakpoints, tablet)) {
+        @content;
+    }
+}
+
+@mixin fonts ($size-mobile: 0.75rem, $size-desktop: 1rem){
     font-size: clamp($size-mobile, 5vw , $size-desktop);
-    font-weight: $weight;
     @include mobile-only{
         font-size: clamp($size-mobile, 3vw , $size-desktop);
-        font-weight: $weight;
     }
 }
 

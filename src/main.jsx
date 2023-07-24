@@ -1,8 +1,9 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 import "./sass/main.scss";
-import Header from './component/Header/Header'
-import Contact from './component/Contact/Contact'
+import Header from './layout/Header/Header';
+import Contact from './layout/Contact/Contact';
+import Home from './pages/Home/Home';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {
   BrowserRouter as Router,
@@ -16,7 +17,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Router>
       <Header />
       <Routes>
-        {/* <Route path="/" element={<App />} /> */}
+        <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Navigate to="/" replace />} />
         {/* <Route path="/projects/:id" element={<Projects />} /> */}
         {/* <Route path="*" element={<Error />} /> */}

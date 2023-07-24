@@ -3,7 +3,9 @@ $color-background-second : #1C1C1C;
 $color-background-third: #333333;
 $color-accent-primary: #0099FF;
 $color-text : #999999;
+$color-text-second: #E5E5E5;
 
 $breakpoints: (
-    mobile: 599px
+    mobile: 599px,
+    tablet: 850px
 );

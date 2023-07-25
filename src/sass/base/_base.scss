@@ -42,6 +42,38 @@ li{
   list-style: none;
 }
 
+article{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
 article, footer {
   padding: 3rem 0;
+}
+
+.hidden {
+  opacity:0;
+  filter: blur(5px);
+  transform: translateY(40vh);
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+}
+
+@keyframes appearBottom {
+  0% {
+      opacity: 0;
+      transform: translateY(40vh);
+      filter: blur(5px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0%);
+  }
 }

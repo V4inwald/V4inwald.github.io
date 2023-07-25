@@ -4,7 +4,7 @@ import Row from 'react-bootstrap/Row';
 
 export default function Contact() {
     return (
-      <footer className='footer'>
+      <footer className='footer' id='contact'>
         <Container className='container-md d-flex flex-column'>
             <h2 className='d-flex justify-content-center' id='contact'>Contactez moi</h2>
             <Row>

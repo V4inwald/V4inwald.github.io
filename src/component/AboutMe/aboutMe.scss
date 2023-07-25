@@ -19,12 +19,19 @@
     }
     &__icons{
         height: 50px;
-        display: block
+        display: block;
+        filter: grayscale(80);
+        &:hover{
+            transform: scale(1.3);
+            transition: 0.2s;
+            filter: drop-shadow(0 0 3px #004e82);
+        }
     }
     &__button{
         margin: 1rem 0;
     }
     &__container{
+        min-height: 50vh;
         display: flex;
         gap:3rem;
         @include tablet-mobile{

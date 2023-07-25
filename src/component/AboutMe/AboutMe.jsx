@@ -13,12 +13,18 @@ import node from '../../assets/images/node.svg';
 import mongoDB from '../../assets/images/mongoDB.svg';
 import Button from 'react-bootstrap/Button';
 
+import { useInView } from "react-intersection-observer";
+
 
 
 export default function AboutMe() {
+    const [ref, inView] = useInView({
+    threshold: 0.4,
+    triggerOnce: true,
+  });
     return (
-      <article className='about-me'>
-        <Container className='about-me__container'>
+      <article className='about-me' id="presentation" ref={ref}>
+        <Container className={`${inView ? "show" : ""} about-me__container hidden`}>
             <aside className='about-me__skills'>
 
                 <div className='d-flex justify-content-center align-items-center'>
@@ -56,7 +62,7 @@ export default function AboutMe() {
                 </div>
 
             </aside>
-            <Container className='about-me__text d-flex flex-column align-items-center'>
+            <Container className='d-flex flex-column align-items-center justify-content-around'>
                 <h2 className="text-center" >A propos de moi</h2>
                 <p className="text-justify about-me__text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. 

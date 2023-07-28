@@ -4,6 +4,7 @@ import "./sass/main.scss";
 import Header from './layout/Header/Header';
 import Contact from './layout/Contact/Contact';
 import Home from './pages/Home/Home';
+import Project from './pages/Project/Project';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {
   BrowserRouter as Router,
@@ -19,7 +20,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Navigate to="/" replace />} />
-        {/* <Route path="/projects/:id" element={<Projects />} /> */}
+        <Route path="/projects/:id" element={<Project />} />
         {/* <Route path="*" element={<Error />} /> */}
       </Routes>
       <Contact />

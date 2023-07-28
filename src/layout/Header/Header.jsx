@@ -10,7 +10,7 @@ export default function Header() {
     <header>
       <Navbar expand="md" className="navbar navbar-dark">
         <Container>
-          <Navbar.Brand href="#home">
+          <Navbar.Brand href="/">
             <Image 
               src={logo}
               width="60"
@@ -22,7 +22,7 @@ export default function Header() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <Nav.Link href="#home">Accueil</Nav.Link>
+              <Nav.Link href="/">Accueil</Nav.Link>
               <Nav.Link href="#presentation">Présentation</Nav.Link>
               <Nav.Link href="#projects">Projets</Nav.Link>
               <Nav.Link href="#contact">Contact</Nav.Link>

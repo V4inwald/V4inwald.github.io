@@ -1,0 +1,42 @@
+@import '../../sass/main.scss';
+
+.about-me{
+    background-color: $color-background;
+    color: $color-text;
+    h2{
+        @include fonts(1.75rem, 2.25rem);
+        margin-bottom: 1rem;
+    }
+    p{
+        @include fonts(0.80rem, 1.15rem)
+    }
+    &__skills{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: center;
+        align-items: center; 
+        gap: 20px;
+    }
+    &__icons{
+        height: 50px;
+        display: block;
+        filter: grayscale(80);
+        &:hover{
+            transform: scale(1.3);
+            transition: 0.2s;
+            filter: drop-shadow(0 0 3px $color-accent-primary-darker);
+        }
+    }
+    &__button{
+        margin: 1rem 0;
+    }
+    &__container{
+        min-height: 50vh;
+        display: flex;
+        gap:3rem;
+        @include tablet-mobile{
+            flex-direction: column;
+        }
+
+    }
+}

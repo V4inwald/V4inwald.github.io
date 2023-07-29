@@ -1,0 +1,17 @@
+@import '../../sass/main.scss';
+
+header{
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    box-shadow: 0 0 10px $color-accent-primary;
+    .navbar{
+        background: $color-background-second;
+        .nav-link{
+            font-family: 'Roboto';
+            font-size: 1.25rem;
+            font-weight: 400;
+        }
+    }
+}

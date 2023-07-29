@@ -1,7 +1,11 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 import "./sass/main.scss";
-import Header from './component/Header/Header'
+import Header from './layout/Header/Header';
+import Contact from './layout/Contact/Contact';
+import Home from './pages/Home/Home';
+import Project from './pages/Project/Project';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import {
   BrowserRouter as Router,
   Routes,
@@ -14,12 +18,12 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Router>
       <Header />
       <Routes>
-        {/* <Route path="/" element={<App />} /> */}
+        <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Navigate to="/" replace />} />
-        {/* <Route path="/projects/:id" element={<Projects />} /> */}
+        <Route path="/projects/:id" element={<Project />} />
         {/* <Route path="*" element={<Error />} /> */}
       </Routes>
-      {/* <Footer /> */}
+      <Contact />
     </Router>
   </React.StrictMode>,
 )

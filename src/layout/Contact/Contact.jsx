@@ -14,8 +14,12 @@ export default function Contact() {
                     <span>Tours - France</span>
                 </div>
                 <div className="col d-flex justify-content-end align-items-center footer__icons">
-                    <a href='https://www.linkedin.com/in/josemaria-links-94636413b'><i className="bi bi-linkedin"></i></a>
-                    <a href='https://github.com/V4inwald'><i className="bi bi-github"></i></a>
+                    <a href='https://www.linkedin.com/in/josemaria-links-94636413b' alt='Linkedin' target="_blank" rel="noopener noreferrer">
+                      <i className="bi bi-linkedin"></i>
+                    </a>
+                    <a href='https://github.com/V4inwald' alt='Github' target="_blank" rel="noopener noreferrer">
+                      <i className="bi bi-github"></i>
+                    </a>
                 </div>
             </Row>
 

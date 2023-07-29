@@ -1,12 +1,16 @@
 @import '../../sass/main.scss';
 
 .card{
-    background-color: $color-background-third !important;
+    // background-color: $color-background-third !important;
+    background-color: rgba(255, 255, 255, 0.1) !important;
     text-decoration: none !important;
     color: $color-text-second !important;
+    border: none !important;
     min-height: 300px;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    position: relative;
+    .card-body{
+        height: 100%;
+    }
     &__tags{
         display: flex;
         flex-wrap: wrap;
@@ -16,14 +20,68 @@
     }
     &__tag{
         background-color: $color-accent-primary-darker;
-        text-transform: capitalize;
+        text-transform: uppercase;
         padding: 0 1rem;
         border-radius: $border-radius;
+        &:hover{
+            transform: scale(1.1);
+            transition: 0.2s;
+            filter: drop-shadow(0 0 3px $color-accent-primary-darker);
+        }
     }
     &__button{
         width: fit-content;
         @include mobile-only{
             width: 100%;
         }
+    }
+
+    &:hover::before{
+        opacity: 1;
+    }
+
+    &::before, 
+    &::after{
+        border-radius: inherit;
+        content: "";
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        opacity: 0;
+        transition: opacity 500ms;
+        pointer-events: none;
+    }
+
+    &::before{
+        background: radial-gradient(
+            800px circle at var(--mouse-x) var(--mouse-y),
+            rgba(255, 255, 255, 0.06),
+            transparent 40%
+        );
+        z-index: 3;
+    }
+    &::after{
+        background: radial-gradient(
+            400px circle at var(--mouse-x) var(--mouse-y),
+            $color-accent-primary-rgba,
+            transparent 40%
+        );
+        z-index: 1;
+    }
+    &__content{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        
+        background-color: rgb(23, 23, 23);
+        height: calc(100% - 2px);
+        width: calc(100% - 2px);
+        border-radius: inherit;
+        margin: 1px;
+
+        z-index: 2;
+
+        
     }
 }

@@ -5,7 +5,7 @@
     color: $color-text-second;
     h2{
         @include fonts(1.75rem, 2.25rem);
-        margin: 1rem 0;
+        margin: 3rem 0;
     }
     h3{
         @include fonts(1.50rem, 1.75rem);
@@ -23,5 +23,10 @@
         @media screen and (max-width: 767px){
             grid-template-columns: repeat(1, 1fr);
         }
+    
     }
+}
+
+.project-gallery__container > .card::after {
+    opacity: 1;
 }

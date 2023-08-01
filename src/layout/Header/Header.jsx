@@ -1,5 +1,5 @@
 import './header.scss';
-import logo from '../../assets/images/logo.jpg'
+import logo from '../../assets/images/logo.webp'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -13,9 +13,9 @@ export default function Header() {
           <Navbar.Brand href="/">
             <Image 
               src={logo}
-              width="60"
-              height="60"
-              className="d-inline-block align-top"
+              width="80"
+              height="80"
+              className="d-inline-block align-top logo"
               alt="Josemaria Links"
               roundedCircle />
           </Navbar.Brand>

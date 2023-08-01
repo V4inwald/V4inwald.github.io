@@ -14,6 +14,9 @@
         animation: appearBottom 1s cubic-bezier(.46,.12,.64,1.22);
         animation-fill-mode: forwards;
     }
+    #introduction__bienvenue{
+        @include fonts(1rem, 2rem);
+    }
     p{
         @include fonts(0.80rem, 1.25rem);
         animation: appearBottom 1s cubic-bezier(.46,.12,.64,1.22);

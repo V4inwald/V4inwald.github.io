@@ -3,9 +3,10 @@
 .project-gallery{
     background-color: $color-background-second;
     color: $color-text-second;
+    min-height: 200vh;
     h2{
         @include fonts(1.75rem, 2.25rem);
-        margin: 3rem 0;
+        margin: 4rem 0;
     }
     h3{
         @include fonts(1.50rem, 1.75rem);

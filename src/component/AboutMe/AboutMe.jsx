@@ -73,7 +73,7 @@ export default function AboutMe() {
                     iure sed ullam incidunt, deserunt saepe perspiciatis laboriosam, 
                     exercitationem molestiae deleniti necessitatibus.
                 </p>
-                <Button href="#" variant="outline-primary" size="lg" className='about-me__button'>
+                <Button href="/files/CV_Josemaria_Links_-_Développeur_Web.pdf" download variant="outline-primary" size="lg" className='about-me__button'>
                     Telecharger mon CV
                 </Button>
             </Container>

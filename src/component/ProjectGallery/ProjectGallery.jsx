@@ -46,7 +46,7 @@ export default function ProjectGallery() {
     return (
         <article className='project-gallery' id='projects' ref={ref}>
             <Container className={`${inView ? "show" : ""} hidden`}>
-                <h2 className="text-center">Mes Projets</h2>
+                <h2 className="text-center" >Mes Projets</h2>
                  <div className='project-gallery__container'ref={cardsContainerRef}> 
                     {projects.map((project) => {
                         return (

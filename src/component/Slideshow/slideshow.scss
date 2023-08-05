@@ -1,0 +1,48 @@
+@import '../../sass/main.scss';
+
+.slideshow{
+    position: relative;
+    margin: 1rem 0;
+    .current{
+        position: relative;
+        object-fit: contain;
+        width: 100%;
+        height: 400px;
+        z-index: 1;
+        @include mobile-only{
+            height: clamp(250px, 50vw, 350px);
+        }
+    }
+    .arrow{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 20%;
+        cursor: pointer;
+        transition: 0.2s;
+        z-index: 2;
+        filter: grayscale(80);
+        &:hover{
+            filter: drop-shadow(0 0 3px $color-accent-primary-darker);
+            transform: translateY(-50%) scale(1.02);
+        }
+        &:active{
+            transform: translateY(-50%) scale(0.9);
+        }
+        &__right{
+            right: clamp(9px,3vw,25px);
+        }
+        &__left{
+            left: clamp(9px,3vw,25px);
+        }
+    }
+    .counter{
+        font-size: 18px;
+        font-weight: 500;
+        color: $color-text-second;
+        z-index: 2;
+    }
+    .hide{
+        display: none;
+    }
+}

@@ -1,12 +1,12 @@
 import './card.scss';
-import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import PropTypes from 'prop-types';
 import { Button } from 'react-bootstrap';
 
 export default function Card({id, title, tags, description}) {
 
     return (
-        <Link to={`/projects/${id}`} className='card' >
+        <HashLink to={`/projects/${id}#top`} className='card' >
             <div className="card__content">
                 <div className="card-body d-flex flex-column justify-content-around">
                     <h3 className='card-title'>{title}</h3>
@@ -24,13 +24,13 @@ export default function Card({id, title, tags, description}) {
                     </Button>
                 </div>
             </div>
-        </Link>
+        </HashLink>
     )
 }
 
 Card.propTypes = {
-    id: PropTypes.string,
-    title: PropTypes.string,
-    tags: PropTypes.array,
-    description: PropTypes.string
+    id: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    tags: PropTypes.array.isRequired,
+    description: PropTypes.string.isRequired
 }

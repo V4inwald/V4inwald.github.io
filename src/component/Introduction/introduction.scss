@@ -1,12 +1,13 @@
 @import '../../sass/main.scss';
 
+
+#home{
+    height: calc(100vh - 100px);
+}
+
 .introduction{
     background-color: $color-background-third;
     color: $color-text-second;
-    padding-top: 4rem;
-    .container{
-        min-height: 50vh;
-    }
     h1{
         @include fonts(2rem, 3rem);
         margin-bottom: 1rem;

@@ -1,11 +1,30 @@
 import './header.scss';
+import { useContext } from 'react';
 import logo from '../../assets/images/logo.webp'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Image from 'react-bootstrap/Image';
+import { HashLink } from 'react-router-hash-link';
+import {  useLocation } from 'react-router-dom'
+import { IntroductionContext } from '../../App';
+import { AboutMeContext } from '../../App';
+import { ProjectGalleryContext } from "../../App";
+import { ContactContext } from "../../App";
 
 export default function Header() {
+  
+  let path = useLocation().pathname;
+
+  const { inViewIntro } = useContext(IntroductionContext);
+  const { inViewAboutMe } = useContext(AboutMeContext);
+  const { inViewGallery } = useContext(ProjectGalleryContext);
+  const { inViewContact } = useContext(ContactContext);
+
+  const isIntroActive = inViewIntro && path == '/';
+  const isAboutMeActive = inViewAboutMe && path == '/';
+  const isProjectsActive = inViewGallery && path == '/';
+
   return (
     <header>
       <Navbar expand="md" className="navbar navbar-dark">
@@ -22,10 +41,10 @@ export default function Header() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <Nav.Link href="/">Accueil</Nav.Link>
-              <Nav.Link href="#presentation">Présentation</Nav.Link>
-              <Nav.Link href="#projects">Projets</Nav.Link>
-              <Nav.Link href="#contact">Contact</Nav.Link>
+              <HashLink className={`${isIntroActive ? "active" : ""} nav-link`} to={"/#top"}>Accueil</HashLink>
+              <HashLink className={`${isAboutMeActive ? "active" : ""} nav-link`} to={"/#presentation"}>Présentation</HashLink>
+              <HashLink className={`${isProjectsActive ? "active" : ""} nav-link`} to={"/#projects"}>Projets</HashLink>
+              <HashLink className={`${inViewContact ? "active" : ""} nav-link`} to={"#contact"}>Contact</HashLink>
             </Nav>
           </Navbar.Collapse>
         </Container>

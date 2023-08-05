@@ -1,5 +1,8 @@
+import { useContext, useState, useEffect } from 'react';
 import './aboutMe.scss'
 import Container from 'react-bootstrap/Container';
+import { AboutMeContext } from "../../App";
+import Button from 'react-bootstrap/Button';
 import html from '../../assets/images/html.svg';
 import css from '../../assets/images/css.svg';
 import js from '../../assets/images/js.svg';
@@ -11,22 +14,21 @@ import figma from '../../assets/images/figma.svg';
 import notion from '../../assets/images/notion.svg';
 import node from '../../assets/images/node.svg';
 import mongoDB from '../../assets/images/mongoDB.svg';
-import Button from 'react-bootstrap/Button';
-
-import { useInView } from "react-intersection-observer";
-
-
 
 export default function AboutMe() {
-    const [ref, inView] = useInView({
-    threshold: 0.4,
-    triggerOnce: true,
-  });
-    return (
-      <article className='about-me' id="presentation" ref={ref}>
-        <Container className={`${inView ? "show" : ""} about-me__container hidden`}>
-            <aside className='about-me__skills'>
 
+    const { refAboutMe, inViewAboutMe } = useContext(AboutMeContext);
+    const [isShown, setIsShown] = useState(false);
+    useEffect(() => {
+        if (inViewAboutMe === true && isShown === false){
+            setIsShown(true);
+        }
+    }, [inViewAboutMe, isShown]);
+
+    return (
+      <article className='about-me' id="presentation" ref={refAboutMe}>
+        <Container className={`${isShown ? "show" : ""} about-me__container hidden`}>
+            <aside className='about-me__skills'>
                 <div className='d-flex justify-content-center align-items-center'>
                     <img src={html} className="about-me__icons" alt="html5" />
                 </div>
@@ -60,7 +62,6 @@ export default function AboutMe() {
                 <div className='d-flex justify-content-center align-items-center'>
                     <img src={mongoDB} className="about-me__icons" alt="mongoDb" />
                 </div>
-
             </aside>
             <Container className='d-flex flex-column align-items-center justify-content-around'>
                 <h2 className="text-center" >A propos de moi</h2>
@@ -77,8 +78,6 @@ export default function AboutMe() {
                     Telecharger mon CV
                 </Button>
             </Container>
-            
-
         </Container>
       </article>
     )

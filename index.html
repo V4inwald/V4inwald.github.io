@@ -30,18 +30,16 @@
       content="https://res.cloudinary.com/dh3vbx78h/image/upload/v1691419830/josemaria_links_gfaloi.jpg">
     <!-- Script that solves problem with react-router and github pages -->
     <script>
-      (function (l) {
-        if (l.search[1] === "/") {
-          var decoded = l.search
-            .slice(1)
-            .split("&")
-            .map(function (s) {
-              return s.replace(/~and~/g, "&");
-            })
-            .join("?");
-          window.history.replaceState(null, null, l.pathname.slice(0, -1) + decoded + l.hash);
+      (function(l) {
+        if (l.search[1] === '/' ) {
+          var decoded = l.search.slice(1).split('&').map(function(s) {
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + decoded + l.hash
+          );
         }
-      })(window.location);
+      }(window.location));
     </script>
     <script type="module" crossorigin src="/assets/index-3855ae32.js"></script>
     <link rel="stylesheet" href="/assets/index-04859b39.css">

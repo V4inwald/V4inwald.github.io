@@ -1,0 +1,30 @@
+@import '../../sass/main.scss';
+
+
+.error{
+    min-height: 100vh;
+    background-color: $color-background;
+    color: $color-text;
+    text-align: center;
+
+    &__message{
+        @include fonts(1.13rem,2.25rem);
+        margin-bottom: 2rem;
+        h2{
+            font-size: clamp(5rem, 30vw ,18rem);
+            font-family: 'Raleway';
+            font-weight: 700;
+        }
+        p{
+            font-family: 'Roboto';
+            font-weight: 500;
+        }
+    }
+    &__button{
+        margin-bottom: 2rem;
+        width: fit-content;
+        @include mobile-only{
+            width: 100%;
+        }
+    }
+}

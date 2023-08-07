@@ -17,7 +17,8 @@ export default function Introduction() {
           <p className='text-justify'>
             Je suis un d&eacute;veloppeur web passionn&eacute; sp&eacute;cialis&eacute; dans le front-end, avec des comp&eacute;tences en back-end. 
             Actuellement &agrave; la recherche d&apos;un poste en tant que d&eacute;veloppeur front-end junior.
-            Explorez mon portfolio pour d&eacute;couvrir mes r&eacute;alisations. Contactez-moi pour des collaborations ou opportunit&eacute;s professionnelles. 
+            Explorez mon portfolio pour d&eacute;couvrir mes r&eacute;alisations. 
+            <br /> Contactez-moi pour des collaborations ou opportunit&eacute;s professionnelles. 
             Ensemble, cr&eacute;ons des exp&eacute;riences web captivantes !
           </p>
         </div>

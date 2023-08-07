@@ -1,6 +1,6 @@
 import './project.scss'
 import Slideshow from "../../component/Slideshow/Slideshow";
-
+import Error from '../Error/Error';
 import { HashLink } from 'react-router-hash-link';
 import projects from '../../assets/data/projects.json';
 import { useParams } from 'react-router-dom';
@@ -14,7 +14,7 @@ export default function Project() {
     //if ID doesn't exist then show error404
     if (projectById.length === 0 ) {
         return(
-          <p>error</p>
+          <Error />
         );
     }
 

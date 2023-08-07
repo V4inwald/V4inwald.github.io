@@ -16,9 +16,7 @@
         @include fonts(1rem, 1.15rem)
     }
     a{
-        text-decoration: none;
-        color: $color-accent-primary;
-        cursor: pointer;
+        text-decoration: none !important;
     }
     &__links{
         a{

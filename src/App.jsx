@@ -4,7 +4,7 @@ import Header from './layout/Header/Header';
 import Contact from './layout/Contact/Contact';
 import Home from './pages/Home/Home';
 import Project from './pages/Project/Project';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import Error from "./pages/Error/Error";
 import {
   BrowserRouter as Router,
   Routes,
@@ -47,7 +47,7 @@ const App = () => {
                         <Route path="/" element={<Home />} />
                         <Route path="/projects" element={<Navigate to="/" replace />} />
                         <Route path="/projects/:id" element={<Project />} />
-                        {/* <Route path="*" element={<Error />} /> */}
+                        <Route path="*" element={<Error />} />
                         </Routes>
                         <Contact />
                     </ContactContext.Provider>

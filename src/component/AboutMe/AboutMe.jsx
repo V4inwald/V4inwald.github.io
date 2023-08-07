@@ -66,13 +66,15 @@ export default function AboutMe() {
             <Container className='d-flex flex-column align-items-center justify-content-around'>
                 <h2 className="text-center" >A propos de moi</h2>
                 <p className="text-justify about-me__text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Officia ratione quos amet similique unde odio alias eaque 
-                    quidem laboriosam ipsa consequuntur accusantium, architecto 
-                    saepe officiis ducimus delectus, reiciendis ex magnam rem, 
-                    doloremque earum soluta? Molestias, consequatur tenetur nemo 
-                    iure sed ullam incidunt, deserunt saepe perspiciatis laboriosam, 
-                    exercitationem molestiae deleniti necessitatibus.
+                    Passionné par le web depuis de nombreuses années j&apos;ai commencé à 
+                    modifier des sites puis à apprendre à en créer en autodidacte… 
+                    J&apos;ai fini par réaliser qu&apos;il s&apos;agissait d&apos;une véritable passion et 
+                    je me suis formé auprès d&apos;OpenClassrooms afin d&apos;en apprendre encore plus! 
+                    J&apos;ai lors de cette formation appris bien des choses comme utiliser React et NodeJs.
+                    Je cherche actuellement un poste de Développeur Web Frontend Junior.
+                    <br />
+                    Je cherche à progresser et à participer à des projets challengeants, 
+                    si vous avez une proposition de ce type je serais ravi d&apos;en parler avec vous.
                 </p>
                 <Button href="/files/CV_Josemaria_Links_-_Développeur_Web.pdf" download variant="outline-primary" size="lg" className='about-me__button'>
                     Telecharger mon CV

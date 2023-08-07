@@ -23,8 +23,8 @@
         text-transform: uppercase;
         padding: 0 1rem;
         border-radius: $border-radius;
+        cursor: pointer;
         &:hover{
-            transform: scale(1.1);
             transition: 0.2s;
             filter: drop-shadow(0 0 3px $color-accent-primary-darker);
         }

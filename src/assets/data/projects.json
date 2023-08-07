@@ -3,7 +3,8 @@
         "id": "f892dc3e",
         "title": "Booki - Intégration HTML & CSS",
         "pictures": [
-			"https://res.cloudinary.com/dh3vbx78h/image/upload/v1690548787/Portfolio-images/booki-1_c7zf6p.webp"
+			"https://res.cloudinary.com/dh3vbx78h/image/upload/v1690897220/Portfolio-images/Booki_01_o8okga.webp",
+            "https://res.cloudinary.com/dh3vbx78h/image/upload/v1690897220/Portfolio-images/Booki_02_hqwvvt.webp"
 		],
         "links": {
 			"github": "https://github.com/V4inwald/Openclassrooms_web_dev_project_2"
@@ -13,17 +14,22 @@
             "CSS",
             "Figma",
             "Git",
-            "Github"
+            "Github",
+            "Github Pages",
+            "Windows",
+            "Visual Studio Code",
+            "Trello",
+            "Slack"
         ],
         "description" : "Integration d'un site en HTML & CSS en suivant les maquettes...",
-        "context": "Il s'agit d'un projet de la formation OpenClassrooms, voici quel en était le scénario. Ce projet consistait à créer la page d'accueil d'une agence de voyage pour la start-up Booki. En tant que développeur web en alternance, j'ai été chargé d'intégrer l'interface du site en utilisant du code HTML et CSS. Les maquettes du site pour les versions desktop, tablette et mobile m'ont été fournies par Loïc, l'UI designer, et j'ai dû respecter les spécifications techniques établies en collaboration avec Sarah, la CTO. L'objectif du projet était de permettre aux utilisateurs de trouver facilement des hébergements et des activités dans la ville de leur choix sur le site Booki.",
-        "détails": "J'ai commencé ce projet par la configuration de mon environnement de développement, et j'ai utilisé Git pour versionner le projet ainsi que GitHub.J'ai aussi dû respecter les maquettes Figma afin d'atteindre le résultat voulu. J'ai utilisé des balises sémantiques pour le HTML et fait attention à l'organisation du CSS que j'ai divisé en différentes feuilles de style."
+        "context": "Il s'agit d'un projet de la formation OpenClassrooms, voici quel en était le scénario. Ce projet consistait à créer la page d'accueil d'une agence de voyage pour la start-up Booki. En tant que développeur web frontend, j'ai été chargé d'intégrer l'interface du site en HTML et CSS. Les maquettes du site pour les versions desktop, tablette et mobile m'ont été fournies par l'UI designer, et j'ai dû respecter les spécifications techniques établies en collaboration avec la CTO. L'objectif du projet était d'intégrer les maquettes en utilisant uniquement du HTML et CSS.",
+        "details": "J'ai commencé ce projet par la configuration de mon environnement de développement, et j'ai utilisé Git pour versionner le projet ainsi que GitHub.J'ai aussi dû respecter les maquettes Figma afin d'atteindre le résultat voulu. J'ai utilisé des balises sémantiques pour le HTML et fait attention à l'organisation du CSS que j'ai divisé en différentes feuilles de style."
     },
     {
         "id": "a1b2c3d4",
         "title": "Sophie Bluel - Interface dynamique Javascript",
         "pictures": [
-			"https://res.cloudinary.com/dh3vbx78h/image/upload/v1690548787/Portfolio-images/sophie-bluel-1_ci2b27.webp"
+			"https://res.cloudinary.com/dh3vbx78h/image/upload/v1690897221/Portfolio-images/Sophie-Bluel_01_ltrh5t.webp"
 		],
         "links": {
 			"github": "https://github.com/V4inwald/Openclassrooms-portfolio-architecte-sophie-bluel"
@@ -36,35 +42,45 @@
             "HTML",
             "CSS",
             "Git",
-            "Github"
+            "Github",
+            "Prettier", 
+            "Windows",
+            "Visual Studio Code",
+            "Trello",
+            "Slack"
         ],
         "description" : "Création d'un site dynamique avec Javascript interagissant avec une API...",
-        "context": "Il s'agit d'un projet de la formation OpenClassrooms, voici quel en était le scénario. Je travaille comme développeur front-end pour l'agence ArchiWebos. En renfort d'une équipe, je suis chargé de développer la page de présentation des travaux de l'architecte, la page de connexion de l'administrateur du site et la modale pour uploader de nouveaux médias. J'ai reçu les maquettes, le code back-end et le code front-end d'origine pour mener à bien ce projet.",
-        "détails": "J'ai développé la page de présentation des travaux en utilisant JavaScript pour la rendre dynamique. J'ai créé la page de connexion de l'administrateur depuis zéro en utilisant des formulaires et JavaScript. J'ai également implémenté une modale pour uploader de nouveaux médias. J'ai collaboré avec l'équipe en utilisant Git et GitHub pour versionner mon code et suivre les tâches attribuées sur le Kanban fourni. Afin de mener à bien ce projet j'ai dû manipuler le DOM, récupérer des données utilisateur et gérer des événements avec JavaScript, ainsi que utiliser l'API rest pour récupérer les données et images."
+        "context": "Il s'agit d'un projet de la formation OpenClassrooms, voici quel en était le scénario. Je travaille comme développeur front-end pour l'agence ArchiWebos. En renfort d'une équipe, je suis chargé de développer la page de présentation des travaux de l'architecte, la page de connexion de l'administrateur du site et la modale pour uploader de nouveaux médias. J'ai reçu les maquettes, le code back-end et le code front-end d'origine pour mener à bien ce projet. Lors de ce projet je ne pouvais utiliser que HTML/CSS ainsi que Javascript, je ne pouvais utiliser aucun Framework.",
+        "details": "J'ai développé la page de présentation des travaux en utilisant JavaScript pour la rendre dynamique. J'ai créé la page de connexion de l'administrateur depuis zéro en utilisant des formulaires et JavaScript. J'ai également implémenté une modale pour uploader de nouveaux médias. J'ai collaboré avec l'équipe en utilisant Git et GitHub pour versionner mon code et suivre les tâches attribuées sur le Kanban. Afin de mener à bien ce projet j'ai dû manipuler le DOM, récupérer des données utilisateur et gérer des événements avec JavaScript, ainsi que utiliser l'API rest pour récupérer les données et images."
     },
     {
         "id": "e5f6g7h8",
         "title": "Menu Maker - Gestion de Projet ",
         "pictures": [
-            "https://res.cloudinary.com/dh3vbx78h/image/upload/v1690548787/Portfolio-images/menu-maker_xjzr0w.webp"
+            "https://res.cloudinary.com/dh3vbx78h/image/upload/v1690897220/Portfolio-images/Menu-maker_01_jmfscm.webp"
 		],
         "links": {
-            "Notion": "https://lavender-raft-2a7.notion.site/ceba3559a4cf4ad8a9ff015b76207cb7?v=9313d3f826c64179a035ee7137a15423",
-			"Spécifications Techniques": "https://docs.google.com/document/d/1XGlvq7Ci9cSx4R94xAYLovlw-3Y4bOru0ncym_Y2I9Q/edit?usp=sharing"
+            "notion": "https://lavender-raft-2a7.notion.site/ceba3559a4cf4ad8a9ff015b76207cb7?v=9313d3f826c64179a035ee7137a15423",
+			"spécifications techniques": "https://docs.google.com/document/d/1XGlvq7Ci9cSx4R94xAYLovlw-3Y4bOru0ncym_Y2I9Q/edit?usp=sharing"
 		},
         "tags": [
             "Notion",
-            "AGILE"
+            "AGILE", 
+            "Slack",
+            "Veille",
+            "Google Slides", 
+            "Google Docs",
+            "Windows"
         ],
         "description" : "Gestion de projet Agile: création de spécifications techniques et d'un sprint backlog...",
-        "context": "Il s'agit d'un projet de la formation OpenClassrooms, voici quel en était le scénario. Je suis développeur front-end au sein de l'agence Webgencia. Cette fois-ci, on m'a confié une mission de planification plutôt que de développement. Mon client, Qwenta, souhaite créer un site nommé \"Menu Maker\" qui permettra aux restaurateurs d'afficher et de mettre en page leurs menus facilement. Je travaille en collaboration avec Soufiane, le Product Owner, pour préparer la réunion de validation du projet avec John, le chef de projet chez Qwenta. J'ai trois volets à réaliser : développer un système de veille pour générer des idées, définir les spécifications techniques du site et organiser la gestion de projet",
-        "détails": "J'ai planifié le projet \"Menu Maker\" pour le client Qwenta. J'ai développé un système de veille pour générer des idées et rassembler des informations utiles. J'ai déterminé les spécifications techniques du site et organisé la gestion du projet avec un tableau Kanban sur notion. J'ai ensuite présenté la solution technique de manière claire et visuelle avec une présentation. Cette expérience m'a permis de travailler mes compétences en gestion de projet agile et veille technologique."
+        "context": "Il s'agit d'un projet de la formation OpenClassrooms, voici quel en était le scénario. Je suis développeur front-end au sein de l'agence Webgencia. On m'a confié une mission de planification plutôt que de développement. Mon client, Qwenta, souhaite créer un site nommé \"Menu Maker\" qui permettra aux restaurateurs d'afficher et de mettre en page leurs menus facilement. Je travaille en collaboration avec le Product Owner, pour préparer la réunion de validation du projet avec le chef de projet chez Qwenta. J'ai eu trois taches à réaliser : développer un système de veille pour générer des idées, définir les spécifications techniques du site et organiser la gestion de projet.",
+        "details": "Pour le projet \"Menu Maker\" j'ai développé un système de veille afin de rassembler des informations utiles et de pouvoir m'aider à definir des spécifications techniques. La veille accomplie j'ai défini les spécifications techniques du site et organisé la gestion du projet avec un tableau Kanban sur notion. J'ai ensuite présenté la solution technique de manière claire lors d'une présentation. Cette expérience m'a permis de travailler mes compétences en gestion de projet agile et veille technologique."
     },
     {
         "id": "9i8j7h6g",
         "title": "Nina Carducci - Débug et optimisation",
         "pictures": [
-			"https://res.cloudinary.com/dh3vbx78h/image/upload/v1690548787/Portfolio-images/nina-carducci-1_lkvi3z.webp"
+			"https://res.cloudinary.com/dh3vbx78h/image/upload/v1690897221/Portfolio-images/Nina-Carducci_01_yjuzoc.webp"
 		],
         "links": {
 			"github": "https://github.com/V4inwald/Openclassrooms-optimisation-site-nina-carducci",
@@ -74,62 +90,89 @@
             "SEO",
             "Wave",
             "Rich Snippet",
-            "Google Lighthouse"
+            "Google Lighthouse",
+            "Github Pages",
+            "Windows",
+            "Git", 
+            "Github",
+            "Visual Studio Code",
+            "Prettier",
+            "Notion",
+            "Slack"
         ],
-        "description" : "Débuguer, optimiser le SEO et Accessibilité d'un site...",
-        "context": "Il s'agit d'un projet de la formation OpenClassrooms, voici quel en était le scénario. En tant que développeur freelance, j'ai été contacté par Nina Carducci, une photographe professionnelle, qui souhaite optimiser son site web nina-carducci.github.io. Elle a exprimé le besoin d'améliorer les performances de son site, son référencement SEO, et de corriger certains bugs dans le code. Après avoir proposé mes services et fourni un rapport d'audit détaillé, Nina a accepté ma proposition et nous avons convenu d'un rendez-vous pour discuter des détails de l'optimisation. Je suis désormais prêt à débuter le projet en répondant à ses demandes et en lui fournissant un rapport détaillé de mon intervention.",
-        "détails": "Dans le cadre de ce projet, j'ai travaillé sur l'optimisation du site web de la photographe Nina Carducci (nina-carducci.github.io). Pour cela, j'ai utilisé plusieurs outils et techniques, dont Google Lighthouse et l'extension Wave pour évaluer les performances et l'accessibilité du site. J'ai également mis en place des méthodes d'optimisation des images et du code afin d'améliorer le temps de chargement et le référencement SEO. Enfin, j'ai débuggé certains aspects du site, notamment la navigation dans la modale de la galerie et l'affichage des filtres. À la fin du projet, j'ai livré à Nina un rapport détaillé présentant toutes les modifications apportées et leurs impacts sur le site."
+        "description" : "Débuguer, optimiser le SEO et l'accessibilité d'un site...",
+        "context": "Il s'agit d'un projet de la formation OpenClassrooms, voici quel en était le scénario. En tant que développeur freelance, j'ai été contacté par Nina Carducci, une photographe professionnelle, qui souhaite optimiser son site web. Elle a exprimé le besoin d'améliorer les performances de son site, son référencement SEO, et de corriger certains bugs dans le code. Après avoir proposé mes services et fourni un rapport d'audit détaillé, nous avons convenu d'un rendez-vous pour discuter des details de l'optimisation.",
+        "details": "Dans le cadre de ce projet, j'ai travaillé sur l'optimisation du site web de la photographe Nina Carducci (nina-carducci.github.io). Pour cela, j'ai utilisé plusieurs outils et techniques, dont Google Lighthouse et l'extension Wave pour évaluer les performances et l'accessibilité du site. J'ai également mis en place des méthodes d'optimisation des images et du code afin d'améliorer le temps de chargement et le référencement SEO. Enfin, j'ai débuggé certains aspects du site, notamment la navigation dans la modale de la galerie et l'affichage des filtres. À la fin du projet, j'ai livré un rapport détaillé présentant toutes les modifications apportées et leurs impacts sur le site."
     },
     {
         "id": "b4a3e2d1",
         "title": "Kasa - Application web React",
         "pictures": [
-			"https://res.cloudinary.com/dh3vbx78h/image/upload/v1690548788/Portfolio-images/kasa-1_llugok.webp"
+			"https://res.cloudinary.com/dh3vbx78h/image/upload/v1690897220/Portfolio-images/Kasa_01_ojwtqz.webp",
+            "https://res.cloudinary.com/dh3vbx78h/image/upload/v1690897220/Portfolio-images/Kasa_02_vzckez.webp"
 		],
         "links": {
-			"Github": "https://github.com/V4inwald/Openclassrooms-site-Kasa"
+			"github": "https://github.com/V4inwald/Openclassrooms-site-Kasa"
 		},
         "tags": [
             "React",
             "Create React App",
             "SaSS",
             "Javascript",
+            "ESLint",
+            "Prettier",
             "HTML",
             "CSS",
             "Figma",
             "Git",
-            "Github"
+            "Github", 
+            "Npm",
+            "Notion",
+            "Slack",
+            "React Router",
+            "Windows", 
+            "WSL", 
+            "Visual Studio Code"
+
         ],
         "description" : "Création d'une Single Page Application avec React...",
-        "context": "Il s'agit d'un projet de la formation OpenClassrooms, voici quel en était le scénario. En tant que développeur front-end freelance, j'ai été engagé par Kasa, une entreprise spécialisée dans la location d'appartements entre particuliers en France. Mon objectif est de moderniser leur plateforme web en utilisant React. Le site actuel a été développé il y a plus de 10 ans en ASP.NET, et la CTO souhaite passer à une stack JavaScript complète avec NodeJS côté back-end et React côté front-end. J'ai reçu des maquettes Figma du designer Paul et quelques contraintes techniques à respecter. Le back-end est en cours de recrutement, donc pour l'instant, j'ai accès à un fichier JSON contenant les 20 dernières annonces de logements pour construire le front-end correspondant.",
-        "détails": "J'ai réalisé la refonte front-end de la plateforme web de Kasa en utilisant React, Sass et React Router. J'ai développé une interface moderne et responsive en suivant les maquettes Figma. J'ai géré la galerie d'images avec une logique de navigation bouclée et des images coupées et centrées. J'ai implémenté les contraintes fonctionnelles pour les Collapses."
+        "context": "Il s'agit d'un projet de la formation OpenClassrooms, voici quel en était le scénario. En tant que développeur front-end freelance, j'ai été engagé par Kasa, une entreprise spécialisée dans la location d'appartements entre particuliers en France. Mon objectif était de moderniser leur plateforme web en utilisant React. J'ai reçu des maquettes Figma du designer et quelques contraintes techniques à respecter. Le back-end n'étant pas encore développé j'ai eu accès à un fichier JSON contenant les 20 dernières annonces de logements pour construire le front-end.",
+        "details": "J'ai réalisé la refonte front-end de la plateforme web de Kasa en utilisant React, Sass et React Router. J'ai intégré le site en suivant les maquettes Figma. J'ai du créer un Slideshow pour les images des annonces en respectant certaines contraintes. J'ai aussi beaucoup utilisé le State principalemet pour les composants Collapse."
     },
     {
         "id": "0k9l8m7n",
         "title": "Mon vieux grimoire - Backend NodeJs",
         "pictures": [
-			"https://res.cloudinary.com/dh3vbx78h/image/upload/v1690548787/Portfolio-images/mon-vieux-grimoire-1_d14qmf.webp"
+			"https://res.cloudinary.com/dh3vbx78h/image/upload/v1690897220/Portfolio-images/Mon-vieux-grimoire_01_xz8cwx.webp"
 		],
         "links": {
 			"github": "https://github.com/V4inwald/oc-mon-vieux-grimoire"
 		},
         "tags": [
             "NodeJS",
+            "ExpressJS",
             "MongoDB",
-            "API Rest",
             "Postman",
+            "API Rest",
             "Git",
-            "Github"
+            "Github",
+            "Npm",
+            "Notion",
+            "Slack",
+            "Windows", 
+            "WSL", 
+            "Visual Studio Code"
         ],
         "description" : "Création du Backend d'un site avec NodeJS...",
-        "context": "Il s'agit d'un projet de la formation OpenClassrooms, voici quel en était le scénario. En tant que développeur back-end en freelance basé à Lille, j'ai été contacté par Kévin, un développeur front-end expérimenté, pour travailler ensemble sur un nouveau projet. Il s'agit de créer un site de notation de livres pour la chaîne de librairies \"Le Vieux Grimoire\" à Lille, baptisé \"Mon Vieux Grimoire\". Kévin s'est chargé du développement du front-end en React, tandis que ma mission a consisté à développer la partie back-end. Nous avons reçu les spécifications fonctionnelles et la maquette du site, et j'ai mis en place l'API en suivant les spécifications techniques fournies par Kévin. Le projet vise à permettre aux membres de noter et référencer des livres, avec une attention particulière à la prise en compte du Green Code en optimisant la taille des images envoyées par les utilisateurs.",
-        "détails": "Dans ce projet, j'ai développé le back-end pour le site \"Mon Vieux Grimoire\", une plateforme de notation de livres pour la chaîne de librairies \"Le Vieux Grimoire\" à Lille. J'ai utilisé Node.js avec le package \"nodemon\" pour faciliter le développement. La base de données a été gérée avec MongoDB et le module \"mongoose\". J'ai appliqué les bonnes pratiques de sécurité de l'OWASP pour protéger l'application contre les failles courantes. De plus, j'ai optimisé les images pour respecter les recommandations du Green Code. Le résultat est un back-end robuste et sécurisé qui s'intègre parfaitement avec le front-end développé par Kévin, permettant une application fonctionnelle et performante pour les utilisateurs."
+        "context": "Il s'agit d'un projet de la formation OpenClassrooms, voici quel en était le scénario. En tant que développeur back-end en freelance, j'ai été contacté par un développeur front-end pour travailler ensemble sur un nouveau projet. Il s'agit de créer un site de notation de livres nommé \"Mon Vieux Grimoire\". Le front-end à déja été développé en React, ma mission quand à consistait à développer la partie back-end. Nous avons reçu les spécifications fonctionnelles et la maquette du site, et j'ai mis en place l'API en suivant les spécifications techniques fournies. Le projet visait à permettre aux membres de noter et référencer des livres, avec une attention particulière à la prise en compte du Green Code en optimisant la taille des images envoyées par les utilisateurs.",
+        "details": "Dans ce projet, j'ai développé le back-end avec NodeJS, ExpressJS et Nodemon (pour faciliter le développement). La base de données a été créé avec MongoDB et les modèles de données gérés avec Mongoose. J'ai appliqué les bonnes pratiques de sécurité de l'OWASP pour protéger l'application contre les failles courantes. De plus, j'ai optimisé les images pour respecter les recommandations du Green Code. Le résultat est un back-end robuste et sécurisé qui s'intègre parfaitement avec le front-end déja développé, permettant une application fonctionnelle et performante pour les utilisateurs."
     },
     {
         "id": "p6q5r4s3",
         "title": "Portfolio Josemaria Links - Application web React",
         "pictures": [
-			"https://res.cloudinary.com/dh3vbx78h/image/upload/v1690548787/Portfolio-images/mon-vieux-grimoire-1_d14qmf.webp"
+			"https://res.cloudinary.com/dh3vbx78h/image/upload/v1690897220/Portfolio-images/Josemaria-links_01_wjtzje.webp",
+            "https://res.cloudinary.com/dh3vbx78h/image/upload/v1690897220/Portfolio-images/Josemaria-links_02_rhmudp.webp"
 		],
         "links": {
 			"github": "https://github.com/V4inwald/V4inwald.github.io",
@@ -140,16 +183,27 @@
             "Bootstrap",
             "Vite",
             "React",
+            "React Router",
             "Javascript",
+            "ESLint",
+            "Prettier",
             "SaSS",
             "HTML",
             "CSS",
             "Figma",
             "Git",
-            "Github"
+            "Github",
+            "Github Pages",
+            "Npm",
+            "Notion",
+            "Slack",
+            "Windows", 
+            "WSL", 
+            "Visual Studio Code"
+
         ],
         "description" : "Création de mon Portfolio en React...",
         "context": "Afin de trouver mon premier emploi developpeur web je crée ce portfolio que vous regardez actuellement",
-        "détails": "J'ai à nouveau utilisé React pour ce projet mais avec Vite vu que Create React App est déprécié actuellement. J'ai utilisé Bootstrap et SaSS afin de faciliter la gestion du CSS. De plus j'utilise Github Actions afin de créer une pipeline d'intégration continue qui déploie le site sur Github Pages lors du push sur la branche main."
+        "details": "J'ai à nouveau utilisé React pour ce projet mais avec Vite vu que Create React App est actuellement déprecié. J'ai aussi utilisé Bootstrap et SaSS afin de faciliter la gestion du CSS. De plus j'utilise Github Actions afin de créer une pipeline d'intégration continue qui déploie le site sur Github Pages lors du push sur la branche main."
     }
 ]

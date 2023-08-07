@@ -12,6 +12,14 @@ header{
             font-family: 'Roboto';
             font-size: 1.25rem;
             font-weight: 400;
+            &:hover{
+                color: $color-text-second !important;
+            }
         }
+    }
+    .logo:hover{
+        transform: scale(1.2);
+        transition: 0.3s;
+        filter: drop-shadow(0 0 3px $color-accent-primary-darker);
     }
 }

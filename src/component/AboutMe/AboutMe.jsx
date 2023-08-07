@@ -1,5 +1,8 @@
+import { useContext, useState, useEffect } from 'react';
 import './aboutMe.scss'
 import Container from 'react-bootstrap/Container';
+import { AboutMeContext } from "../../App";
+import Button from 'react-bootstrap/Button';
 import html from '../../assets/images/html.svg';
 import css from '../../assets/images/css.svg';
 import js from '../../assets/images/js.svg';
@@ -11,22 +14,21 @@ import figma from '../../assets/images/figma.svg';
 import notion from '../../assets/images/notion.svg';
 import node from '../../assets/images/node.svg';
 import mongoDB from '../../assets/images/mongoDB.svg';
-import Button from 'react-bootstrap/Button';
-
-import { useInView } from "react-intersection-observer";
-
-
 
 export default function AboutMe() {
-    const [ref, inView] = useInView({
-    threshold: 0.4,
-    triggerOnce: true,
-  });
-    return (
-      <article className='about-me' id="presentation" ref={ref}>
-        <Container className={`${inView ? "show" : ""} about-me__container hidden`}>
-            <aside className='about-me__skills'>
 
+    const { refAboutMe, inViewAboutMe } = useContext(AboutMeContext);
+    const [isShown, setIsShown] = useState(false);
+    useEffect(() => {
+        if (inViewAboutMe === true && isShown === false){
+            setIsShown(true);
+        }
+    }, [inViewAboutMe, isShown]);
+
+    return (
+      <article className='about-me' id="presentation" ref={refAboutMe}>
+        <Container className={`${isShown ? "show" : ""} about-me__container hidden`}>
+            <aside className='about-me__skills'>
                 <div className='d-flex justify-content-center align-items-center'>
                     <img src={html} className="about-me__icons" alt="html5" />
                 </div>
@@ -60,25 +62,24 @@ export default function AboutMe() {
                 <div className='d-flex justify-content-center align-items-center'>
                     <img src={mongoDB} className="about-me__icons" alt="mongoDb" />
                 </div>
-
             </aside>
             <Container className='d-flex flex-column align-items-center justify-content-around'>
                 <h2 className="text-center" >A propos de moi</h2>
                 <p className="text-justify about-me__text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Officia ratione quos amet similique unde odio alias eaque 
-                    quidem laboriosam ipsa consequuntur accusantium, architecto 
-                    saepe officiis ducimus delectus, reiciendis ex magnam rem, 
-                    doloremque earum soluta? Molestias, consequatur tenetur nemo 
-                    iure sed ullam incidunt, deserunt saepe perspiciatis laboriosam, 
-                    exercitationem molestiae deleniti necessitatibus.
+                    Passionné par le web depuis de nombreuses années j&apos;ai commencé à 
+                    modifier des sites puis à apprendre à en créer en autodidacte… 
+                    J&apos;ai fini par réaliser qu&apos;il s&apos;agissait d&apos;une véritable passion et 
+                    je me suis formé auprès d&apos;OpenClassrooms afin d&apos;en apprendre encore plus! 
+                    J&apos;ai lors de cette formation appris bien des choses comme utiliser React et NodeJs.
+                    Je cherche actuellement un poste de Développeur Web Frontend Junior.
+                    <br />
+                    Je cherche à progresser et à participer à des projets challengeants, 
+                    si vous avez une proposition de ce type je serais ravi d&apos;en parler avec vous.
                 </p>
-                <Button href="#" variant="outline-primary" size="lg" className='about-me__button'>
+                <Button href="/files/CV_Josemaria_Links_-_Développeur_Web.pdf" download variant="outline-primary" size="lg" className='about-me__button'>
                     Telecharger mon CV
                 </Button>
             </Container>
-            
-
         </Container>
       </article>
     )

@@ -1,2 +1,78 @@
 @import '../../sass/main.scss';
 
+.project{
+    background-color: $color-background-third;
+    color: $color-text-second;
+    h1{
+        @include fonts(2rem, 2.5rem);
+        margin-bottom: 1rem;
+        text-transform: uppercase;   
+    }
+    h2{
+        @include fonts(1.75rem, 2.25rem);
+        margin: 2rem 0;
+    }
+    p{
+        @include fonts(1rem, 1.15rem)
+    }
+    a{
+        text-decoration: none !important;
+    }
+    &__links{
+        a{
+            position: relative;
+            text-transform: capitalize;
+            margin: 0 3rem;
+            padding: 0 3px;
+            @include fonts(1rem, 1.50rem);
+
+            &:before{
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 0%;
+                height: 2px;
+                background-color: $color-accent-primary;
+                transition: 0.5s ease-out;
+            }
+
+            &:hover:before{
+                width: 100%;
+            }
+        }
+    }
+    &__layout{
+        display: flex;
+        flex-direction: column;
+        @include mobile-only{
+            flex-direction: column-reverse;
+        }
+    }
+    &__tags{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 10px;
+        margin: 1rem 0;
+    }
+    &__tag{
+        background-color: $color-accent-primary-darker;
+        text-transform: uppercase;
+        padding: 0 1rem;
+        border-radius: $border-radius;
+        cursor: pointer;
+        &:hover{
+            transition: 0.2s;
+            filter: drop-shadow(0 0 3px $color-accent-primary);
+        }
+    }
+    &__button{
+        margin: 2rem 0;
+        width: fit-content;
+        @include mobile-only{
+            width: 100%;
+        }
+    }
+
+}

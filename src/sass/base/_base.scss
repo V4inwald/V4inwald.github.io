@@ -9,14 +9,9 @@ body {
   min-height: 100vh;
 }
 
-// main, header{
-//     max-width: 1440px;
-//     margin: 0 auto;
-//     padding: 0 70px;
-//     @include mobile-only{
-//         padding: 0 20px;
-//     }
-// }
+main{
+  margin-top: 100px;
+}
 
 h1 {
   font-family: 'Raleway', sans-serif;
@@ -42,14 +37,14 @@ li{
   list-style: none;
 }
 
-article{
+.project, article{
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
 }
 
-article, footer {
+.project, article, footer {
   padding: 3rem 0;
 }
 

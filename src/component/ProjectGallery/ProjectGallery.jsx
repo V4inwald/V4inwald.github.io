@@ -1,22 +1,22 @@
 import './projectGallery.scss';
 import Card from '../Card/Card';
 import Container from 'react-bootstrap/Container';
+import { useRef, useEffect, useContext, useState } from 'react';
+import { ProjectGalleryContext } from "../../App";
 
 import projects from '../../assets/data/projects.json';
-import { useInView } from "react-intersection-observer";
-import { useRef, useEffect } from 'react';
-
 
 export default function ProjectGallery() {
 
-    const [ref, inView] = useInView({
-        threshold: 0.15,
-        triggerOnce: true,
-    });
-
+    const { refGallery, inViewGallery } = useContext(ProjectGalleryContext);
     const cardsContainerRef = useRef(null);
 
+    const [isShown, setIsShown] = useState(false);
+
     useEffect(() => {
+        if (inViewGallery === true && isShown === false){
+            setIsShown(true);
+        }
         const handleMouseMove = (e) => {
             const cards = cardsContainerRef.current.getElementsByClassName("card");
             for (const card of cards) {
@@ -28,26 +28,22 @@ export default function ProjectGallery() {
                 card.style.setProperty("--mouse-y", `${y}px`);
             }
         };
-    
         const containerRef = cardsContainerRef.current;
-        if (inView && containerRef) {
+        if (inViewGallery && containerRef) {
             containerRef.addEventListener("mousemove", handleMouseMove);
         }
-
         return () => {
             if (containerRef) {
                 containerRef.removeEventListener("mousemove", handleMouseMove);
             }
         };
-    }, [inView]);
-
-
+    }, [inViewGallery, isShown]);
 
     return (
-        <article className='project-gallery' id='projects' ref={ref}>
-            <Container className={`${inView ? "show" : ""} hidden`}>
-                <h2 className="text-center">Mes Projets</h2>
-                 <div className='project-gallery__container'ref={cardsContainerRef}> 
+        <article className='project-gallery' id='projects' ref={refGallery}> {/*ref={refGallery} */}
+            <Container className={`${isShown ? "show" : ""} hidden`}>
+                <h2 className="text-center" >Mes Projets</h2>
+                <div className='project-gallery__container'ref={cardsContainerRef}> 
                     {projects.map((project) => {
                         return (
                             <Card
@@ -59,7 +55,7 @@ export default function ProjectGallery() {
                             />
                         )
                     })}
-                </div>
+               </div>
             </Container>
         </article>
     )

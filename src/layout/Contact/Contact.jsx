@@ -1,10 +1,15 @@
 import './contact.scss';
+import {useContext} from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
+import { ContactContext } from "../../App";
 
 export default function Contact() {
+
+  const { refContact } = useContext(ContactContext);
+
     return (
-      <footer className='footer' id='contact'>
+      <footer className='footer' id='contact' ref={refContact}>
         <Container className='container-md d-flex flex-column'>
             <h2 className='d-flex justify-content-center' id='contact'>Contactez moi</h2>
             <Row>

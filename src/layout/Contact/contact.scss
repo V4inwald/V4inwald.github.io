@@ -11,15 +11,16 @@
         cursor: pointer;
     }
     &__icons{
-        font-size: 2rem;
         gap: 20px;
         a{
             color: $color-text;
-            
+            filter: grayscale(80);
             &:hover{
                 transition: 0.2s;
-                color: $color-accent-primary;
                 filter: drop-shadow(0 0 2px $color-accent-primary-darker);
+            }
+            img{
+                height: 32px;
             }
         }
     }

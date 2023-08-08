@@ -3,6 +3,8 @@ import {useContext} from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import { ContactContext } from "../../App";
+import linkedin from '../../assets/images/linkedin.svg';
+import github from '../../assets/images/github.svg';
 
 export default function Contact() {
 
@@ -20,10 +22,10 @@ export default function Contact() {
                 </div>
                 <div className="col d-flex justify-content-end align-items-center footer__icons">
                     <a href='https://www.linkedin.com/in/josemaria-links-94636413b' alt='Linkedin' target="_blank" rel="noopener noreferrer">
-                      <i className="bi bi-linkedin"></i>
+                      <img src={linkedin} alt="Linkedin" />
                     </a>
                     <a href='https://github.com/V4inwald' alt='Github' target="_blank" rel="noopener noreferrer">
-                      <i className="bi bi-github"></i>
+                      <img src={github} alt="Github" />
                     </a>
                 </div>
             </Row>

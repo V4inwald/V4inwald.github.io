@@ -14,6 +14,7 @@ import figma from '../../assets/images/figma.svg';
 import notion from '../../assets/images/notion.svg';
 import node from '../../assets/images/node.svg';
 import mongoDB from '../../assets/images/mongoDB.svg';
+import githubActions from '../../assets/images/githubactions.svg';
 
 export default function AboutMe() {
 
@@ -61,6 +62,9 @@ export default function AboutMe() {
                 </div>
                 <div className='d-flex justify-content-center align-items-center'>
                     <img src={mongoDB} className="about-me__icons" alt="mongoDb" />
+                </div>
+                <div className='d-flex justify-content-center align-items-center'>
+                    <img src={githubActions} className="about-me__icons" alt="github actions" />
                 </div>
             </aside>
             <Container className='d-flex flex-column align-items-center justify-content-around'>
